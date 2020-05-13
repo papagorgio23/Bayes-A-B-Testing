@@ -5,9 +5,6 @@
 #########                       #########
 #########################################
 
-# Clears global environment
-rm(list=ls())
-
 
 # load the functions needed to run the test
 source('AB Functions.R')
@@ -50,7 +47,3 @@ twoGroups(A.priorSucces, A.priorVariance, B.priorSucces, B.priorVariance,
 # Run A/B/C test
 threeGroups(A.priorSucces, A.priorVariance, B.priorSucces, B.priorVariance, C.priorSucces, C.priorVariance,
             A.success, A.total, B.success, B.total, C.success, C.total, yvalue = 75)
-
-
-
-
